@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BaitapJS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Bài 1 -->
+    <div class="container">
+      <h1 class="text-center mb-4">Tính tiền lương</h1>
+      <form>
+        <div class="mb-3">
+          <label for="soNgayLam" class="form-label">Số ngày làm việc</label>
+          <input
+            type="number"
+            class="form-control"
+            id="soNgayLam"
+            placeholder="Nhập số ngày làm việc"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="TienLuong1Ngay" class="form-label">Lương mỗi ngày</label>
+          <input
+            type="number"
+            class="form-control"
+            id="TienLuong1Ngay"
+            placeholder="Nhập lương mỗi ngày"
+          />
+        </div>
+        <button type="button" class="btn btn-success" id="btnTinhLuong">
+          Tính lương
+        </button>
+      </form>
+      <p
+        class="mt-3 p-3 bg-danger bg-opacity-75 text-white rounded"
+        id="ketQua1"
+      ></p>
+    </div>
+    <!-- Bài 2 -->
+    <div class="container">
+      <h1 class="text-center mb-4">Tính giá trị trung bình</h1>
+      <form>
+        <div class="mb-3">
+          <label for="number1" class="form-label">Số thực 1</label>
+          <input
+            type="number"
+            class="form-control"
+            id="number1"
+            placeholder="Nhập số thực 1"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="number2" class="form-label">Số thực 2</label>
+          <input
+            type="number"
+            class="form-control"
+            id="number2"
+            placeholder="Nhập số thực 2"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="number3" class="form-label">Số thực 3</label>
+          <input
+            type="number"
+            class="form-control"
+            id="number3"
+            placeholder="Nhập số thực 3"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="number4" class="form-label">Số thực 4</label>
+          <input
+            type="number"
+            class="form-control"
+            id="number4"
+            placeholder="Nhập số thực 4"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="number5" class="form-label">Số thực 5</label>
+          <input
+            type="number"
+            class="form-control"
+            id="number5"
+            placeholder="Nhập số thực 5"
+          />
+        </div>
+        <button type="button" class="btn btn-success" id="tinhTrungBinh">
+          Tính giá trị trung bình
+        </button>
+      </form>
+      <p
+        class="mt-3 p-3 bg-danger bg-opacity-75 text-white rounded"
+        id="ketQua2"
+      ></p>
+    </div>
+    <!-- Bài 3 -->
+    <div class="container">
+      <h1 class="text-center mb-4">Quy đổi USD sang VND</h1>
+      <form>
+        <div class="mb-3">
+          <label for="" class="form-label">Số tiền USD</label>
+          <input
+            type="number"
+            class="form-control"
+            id="soTienUSD"
+            placeholder="Nhập số tiền USD"
+          />
+        </div>
+        <button type="button" class="btn btn-success" id="btnQuyDoi">
+          Quy đổi
+        </button>
+      </form>
+      <p
+        class="mt-4 p-3 bg-danger bg-opacity-75 text-white rounded"
+        id="ketQua3"
+      ></p>
+    </div>
+    <!-- Bài 4 -->
+    <div class="container">
+      <h1 class="text-center mb-4">Tính diện tích và chu vi hình chữ nhật</h1>
+      <form>
+        <div class="mb-3">
+          <label for="chieuDai" class="form-label">Chiều dài</label>
+          <input
+            type="number"
+            class="form-control"
+            id="chieuDai"
+            placeholder="Nhập chiều dài"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="chieuRong" class="form-label">Chiều rộng</label>
+          <input
+            type="number"
+            class="form-control"
+            id="chieuRong"
+            placeholder="Nhập chiều rộng"
+          />
+        </div>
+        <button type="button" class="btn btn-success" id="btnTinh">Tính</button>
+      </form>
+      <p
+        class="mt-4 p-3 bg-danger bg-opacity-75 text-white rounded"
+        id="ketQua4"
+      ></p>
+    </div>
+    <!-- Bài 5 -->
+    <div class="container">
+      <h1 class="text-center mb-4">Tính tổng hai chữ số</h1>
+      <form>
+        <div class="mb-3">
+          <label for="soHaiChuSo" class="form-label"
+            >Nhập số có hai chữ số</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="soHaiChuSo"
+            placeholder="Nhập số có hai chữ số"
+          />
+        </div>
+        <button
+          type="button"
+          class="btn btn-success"
+          id="btnTinhTong"
+        >
+          Tính tổng
+        </button>
+      </form>
+      <p
+        class="mt-4 p-3 bg-danger bg-opacity-75 text-white rounded"
+        id="ketQua5"
+      ></p>
+    </div>
+    <script src="./baitap.js"></script>
+  </body>
+</html>
